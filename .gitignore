@@ -1,0 +1,38 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Environment variables
+*.env
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Flask / Python stuff
+instance/
+*.db
+*.sqlite3
+
+# Log files
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+
+# Pip
+pip-log.txt
+
+# Uploads / Generated media (se necessário)
+static/uploads/
+static/processed/
