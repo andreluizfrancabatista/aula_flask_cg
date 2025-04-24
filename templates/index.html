@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Plataforma de Filtros de Imagem</title>
+</head>
+<body>
+    <h1>Filtro de Imagens com PIL</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="imagem" accept=".jpg, .jpeg, .png" required><br><br>
+    
+        <label for="filtro">Escolha o filtro:</label>
+        <select name="filtro">
+            <option value="negativo">Negativo</option>
+            <option value="mediana">Filtro Mediana</option>
+            <option value="gaussiana">Desfoque Gaussiano</option>
+            <option value="pb">Preto e Branco</option>
+            <option value="contorno">Contorno</option>
+        </select><br><br>
+    
+        <input type="submit" value="Aplicar Filtro">
+    </form>
+    
+
+    {% if original and processada %}
+        <h2>Imagem Original:</h2>
+        <img src="{{ original }}" width="300">
+
+        <h2>Imagem com Filtro ({{ filtro }}):</h2>
+        <img src="{{ processada }}" width="300">
+    {% endif %}
+</body>
+</html>
