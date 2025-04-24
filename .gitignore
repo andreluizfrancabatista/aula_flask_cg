@@ -32,7 +32,3 @@ Thumbs.db
 
 # Pip
 pip-log.txt
-
-# Uploads / Generated media (se necessário)
-static/uploads/
-static/processed/
